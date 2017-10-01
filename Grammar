@@ -1,4 +1,6 @@
 S -> NP VP
 PP -> P NP
-NP -> DETC NCC | DETC NCC PP | DETV NCV PP | DETV NCV | NP PP | NPrp
-VP -> V NP | VP PP
+NP -> DETC NCC | DETC AdjR NCC | DETC NCC PP | DETC AdjR NCC PP | DETV NCV PP | DETV AdjR NCV PP | DETV NCV | DETV AdjR NCV | NP PP | NPrp | NPro
+AdjR -> AdjR Adj | Adj
+VP -> V | V NP | VP PP
+VP -> Adv V | Adv VP | V Adv

@@ -19,33 +19,18 @@ with open('Lexicon', 'r') as myfile:
 data = grammar + lexicon
 data = data[:-1]
 
-print (data)
-
-#data2 = """
-#S -> NP VP
-#PP -> P NP
-#NP -> DET N | N | NP PP
-#VP -> V NP | VP PP
-#DET -> 'the'
-#N -> 'Nadia' | 'man' | 'eggplant'
-#V -> 'rewarded'
-#P -> 'with'
-#"""
+#print (data)
 
 grammar = nltk.grammar.CFG.fromstring(data)
 
-with open('Sentences', 'r') as myfile:
-    sentences = tuple(open('Sentences','r'))
+sentences = tuple(open('Positives','r'))
 
 for raw_sentence in sentences:
-#    print ( raw_sentence )
-    #raw_sentence = "Nadia rewarded the man with the eggplant"
-    #raw_sentence1 = "Nadia rewarded the man with the eggplant"
-    #raw_sentence = raw_sentence[:-1]
-    #print ( raw_sentence [:-1])
-#    sentence = nltk.tokenize.word_tokenize(raw_sentence[:-1])
     sentence = nltk.tokenize.word_tokenize(raw_sentence)
     print ( raw_sentence[:-1] )
-    parser = nltk.parse.BottomUpChartParser(grammar)
+   # parser = nltk.parse.BottomUpChartParser(grammar, trace=True )
+    parser = nltk.parse.BottomUpChartParser(grammar )
+    if not parser.parse_all(sentence):
+        print ( "No parses" )
     for t in parser.parse_all(sentence):
         print(t)
