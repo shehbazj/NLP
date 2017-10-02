@@ -23,7 +23,7 @@ data = data[:-1]
 
 grammar = nltk.grammar.CFG.fromstring(data)
 
-sentences = tuple(open('Positives','r'))
+sentences = tuple(open('Negatives','r'))
 
 for raw_sentence in sentences:
     sentence = nltk.tokenize.word_tokenize(raw_sentence)

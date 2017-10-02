@@ -1,6 +1,9 @@
 S -> NP VP
-PP -> P NP
-NP -> DETC NCC | DETC AdjR NCC | DETC NCC PP | DETC AdjR NCC PP | DETV NCV PP | DETV AdjR NCV PP | DETV NCV | DETV AdjR NCV | NP PP | NPrp | NPro
-AdjR -> AdjR Adj | Adj
+NP -> NP1 | NP2
+PP -> P NP | P NP1 PP
+NP1 -> DETC NCC | DETC AdjR NCC | DETC NCC PP | DETC AdjR NCC PP | DETV NCV PP | DETV AdjR NCV PP | DETV NCV | DETV AdjR NCV | NP1 PP | NPro | PPos NP1 | PPos NCC | PPos NCV
+NP2 -> NPrp
+AdjR -> Adj AdjR | Adj
+NC -> DETC NCC | DETV NCV
 VP -> V | V NP | VP PP
 VP -> Adv V | Adv VP | V Adv
