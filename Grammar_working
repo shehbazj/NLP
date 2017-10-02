@@ -1,4 +1,0 @@
-S -> NP VP
-PP -> P NP
-NP -> DETC NCC | DETC NCC PP | DETV NCV PP | DETV NCV | NP PP | NPrp
-VP -> V NP | VP PP

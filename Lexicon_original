@@ -1,4 +1,0 @@
-DET -> 'the'
-N -> 'Nadia' | 'man' | 'eggplant'
-V -> 'rewarded'
-P -> 'with'
