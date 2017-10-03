@@ -1,9 +1,9 @@
 S -> NP VP
 NP -> NP1 | NP2
-PP -> P NP | P NP1 PP
-NP1 -> DETC NCC | DETC AdjR NCC | DETC NCC PP | DETC AdjR NCC PP | DETV NCV PP | DETV AdjR NCV PP | DETV NCV | DETV AdjR NCV | NP1 PP | NPro | PPos NP1 | PPos NCC | PPos NCV
+PP -> P NP | P NP1 PP | P NP1 Adv | P NP1 Adv PP
+NP1 -> DETC NCC | AdjR NCC | DETC AdjR NCC | NCC PP | DETC NCC PP | DETC AdjR NCC PP | AdjR NCC PP | DETV NCV PP | NCV PP | AdjR NCV PP |  DETV AdjR NCV PP | DETV NCV | DETV AdjR NCV | AdjR NCV | NP1 PP | NPro | PPos NP1 | PPos NCC | PPos NCV
 NP2 -> NPrp
 AdjR -> Adj AdjR | Adj
 NC -> DETC NCC | DETV NCV
-VP -> V | V NP | VP PP
-VP -> Adv V | Adv VP | V Adv
+VP -> V | V NP | VP PP | V3P V | V3P PP | V3P VP NP
+VP -> Adv V | Adv VP | V Adv | ModalPres VPres | Modal VPres | ModalPres VPres NP | Modal VPres NP | Modal VPres PP | ModalPres VPres PP | Modal VPres Adv | ModalPres VPres Adv | Modal V3PAux V | Modal V3PAux V NP | Modal V3PAux V3PAuxCont VCont | Modal V3PAuxCont VCont NP | Modal V3PAuxCont VCont PP | Modal V3PAux V3PAuxCont VCont NP | AuxPast V | AuxPast V PP | AuxPast Adj | AuxPast V Adv
