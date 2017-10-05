@@ -1,10 +1,12 @@
 S -> NP VP
 NP -> NP1 | NP2
 PP -> P NP | P NP1 PP | P NP1 Adv | P NP1 Adv PP
-NP1 -> DETC NCC | AdjR NCC | DETC AdjR NCC | NCC PP | DETC NCC PP | DETC AdjR NCC PP | AdjR NCC PP | DETV NCV PP | NCV PP | AdjR NCV PP |  DETV AdjR NCV PP | DETV NCV | DETV AdjR NCV | AdjR NCV | NP1 PP | NPro | PPos NP1 | PPos NCC | PPos NCV
+NP1 -> NCC | AdjR NCC | DETC AdjR NCCAll | NCC PP | NCC PP | DETC AdjR NCCAll PP | AdjR NCCAll PP | DETV NCV PP | NCV PP | AdjR NCV PP |  DETV AdjR NCV PP | DETV NCV | DETV AdjR NCV | AdjR NCV | NP1 PP | NPro | PPos NP1 | PPos NCCAll | PPos NCV
 NP2 -> NPrp
 AdjR -> Adj AdjR | Adj
-NC -> DETC NCC | DETV NCV
-VP -> V | V NP | VP PP | V3P V | V3P PP | V3P VP NP | V3P V3PAuxCont VCont V | V3P V3PAuxCont VCont
-VP -> Adv V | Adv VP | V Adv | ModalPres VPres | Modal VPres | ModalPres VPres NP | Modal VPres NP | Modal VPres PP | ModalPres VPres PP | Modal VPres Adv | ModalPres VPres Adv | Modal V3PAux V | Modal V3PAux V NP | Modal V3PAux V3PAuxCont VCont | Modal V3PAuxCont VCont NP | Modal V3PAuxCont VCont PP | Modal V3PAux V3PAuxCont VCont NP | AuxPast V | AuxPast V PP | AuxPast Adj | AuxPast V Adv | AuxPast Adv VP | ModalAll PassivePresent VCont | ModalAll PassivePresent VCont NP | ModalAll PassivePresent VCont PP | ModalAll PassivePresent VCont NP Adv | ModalAll PassivePresent VCont Adv | Modal V3PAux Progressive PassivePresent V | Modal V3PAux Progressive PassivePresent V PP | Modal V3PAux Progressive PassivePresent V PP AdvR | V3PAux V3PAuxCont PT | V3PAux V3PAuxCont PT PP | V3PAux V3PAuxCont PT NP | V3PAux PT | V3PAux PT PP | V3P V3PAuxCont PT | V3P V3PAuxCont PT PP | V3P V3PAuxCont PT NP | V3P V3PAuxCont VCont | V3P V3PAuxCont VCont PP | V3P V3PAuxCont VCont NP
+NC -> NCC | DETV NCV
+NCC -> NCCPlural | DETC NCCPlural | DETC NCCSingular
+NCCAll -> NCCPlural | NCCSingular
+VP -> V | V NP | VP PP | V3P V | V3P PP | V3P VP NP | V3P V3PAuxCont VCont V | V3P V3PAuxCont VCont | V PPos | V PPos P VPres NP | V PPos P VPres 
+VP -> Adv V | Adv VP | V Adv | ModalPres VPres | Modal VPres | ModalPres VPres NP | Modal VPres NP | Modal VPres PP | ModalPres VPres PP | Modal VPres Adv | ModalPres VPres Adv | Modal V3PAux V | Modal V3PAux V NP | Modal V3PAux V3PAuxCont VCont | Modal V3PAux V3PAuxCont PT | Modal V3PAuxCont VCont NP | Modal V3PAuxCont VCont PP | Modal V3PAux V3PAuxCont VCont NP | AuxPast V | AuxPast V PP | AuxPast Adj | AuxPast V Adv | AuxPast Adv VP | ModalAll PassivePresent VCont | ModalAll PassivePresent VCont NP | ModalAll PassivePresent VCont PP | ModalAll PassivePresent VCont NP Adv | ModalAll PassivePresent VCont Adv | Modal V3PAux Progressive PassivePresent V | Modal V3PAux Progressive PassivePresent V PP | Modal V3PAux Progressive PassivePresent V PP AdvR | V3PAux V3PAuxCont PT | V3PAux V3PAuxCont PT PP | V3PAux V3PAuxCont PT NP | V3PAux PT | V3PAux PT PP | V3P V3PAuxCont PT | V3P V3PAuxCont PT PP | V3P V3PAuxCont PT NP | V3P V3PAuxCont VCont | V3P V3PAuxCont VCont PP | V3P V3PAuxCont VCont NP
 ModalAll -> Modal | ModalPres
